@@ -13,5 +13,10 @@ class HomepageCubit extends Cubit<List<stories>>{
 
   }
 
+  Future<void> search(String aramasonuc) async {
+    var ara = await srepo.searchStories(aramasonuc);
+    emit(ara);
+  }
+
 
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kids_stories_app/ui/views/HomePage.dart';
+import 'package:kids_stories_app/utils/color.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -48,7 +49,7 @@ class _SplashScreenState extends State<SplashScreen> with TickerProviderStateMix
     var uzunluk = oran.size.height;
 
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: whiteblue,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
