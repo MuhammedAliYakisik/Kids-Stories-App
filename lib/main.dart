@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kids_stories_app/ui/views/HomePage.dart';
+import 'package:kids_stories_app/ui/views/Splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage()
+      home: SplashScreen()
     );
   }
 }
