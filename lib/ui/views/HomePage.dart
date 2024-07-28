@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => DetailPage()));
+                                  builder: (context) => DetailPage(stori)));
                         },
                         child: ListTile(
                           title: Text(
@@ -110,7 +110,7 @@ class _HomePageState extends State<HomePage> {
                     });
               } else {
                 return Center(
-                  child: Text("No stories found"),
+                  child: CircularProgressIndicator()
                 );
               }
             }));

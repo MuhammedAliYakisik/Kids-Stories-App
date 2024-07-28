@@ -10,7 +10,7 @@ class storiesrepo{
     
     return List.generate(maps.length, (i){
       var satir = maps[i];
-      return stories(satir["stori_id"], satir["stori_title"], satir["stori_contents"]);
+      return stories(satir["stori_id"], satir["stori_title"], satir["stori_contents"],satir["stori_image"]);
     });
     
   }
@@ -24,7 +24,7 @@ class storiesrepo{
 
     return List.generate(maps.length, (i) {
       var satir = maps[i];
-      return stories(satir["stori_id"], satir["stori_title"], satir["stori_contents"]);
+      return stories(satir["stori_id"], satir["stori_title"], satir["stori_contents"],satir["stori_image"]);
     });
   }
 
