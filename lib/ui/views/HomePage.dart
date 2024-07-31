@@ -23,6 +23,7 @@ class _HomePageState extends State<HomePage> {
     context.read<HomepageCubit>().fetchshow();
   }
 
+
   @override
   Widget build(BuildContext context) {
     var oran = MediaQuery.of(context);
@@ -110,9 +111,12 @@ class _HomePageState extends State<HomePage> {
                       clipBehavior: Clip.antiAlias,
                       child: Stack(
                         children: [
-
-                          SizedBox(height: uzunluk / 3.5,
-                              width: double.infinity,child: Image.asset("assets/image/${stori.stori_image}", fit: BoxFit.cover)),
+                          SizedBox(
+                              height: uzunluk / 3.5,
+                              width: double.infinity,
+                              child: Image.asset(
+                                  "assets/image/${stori.stori_image}",
+                                  fit: BoxFit.cover)),
                           Positioned(
                             bottom: 5,
                             left: 0,
@@ -124,7 +128,7 @@ class _HomePageState extends State<HomePage> {
                                 stori.stori_title,
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: genislik/21,
+                                  fontSize: genislik / 21,
                                   fontWeight: FontWeight.bold,
                                 ),
                                 maxLines: 2,
@@ -133,11 +137,9 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                         ],
-
-
-                                            ),
-                ),
-                ),
+                      ),
+                    ),
+                  ),
                 );
               },
             );
